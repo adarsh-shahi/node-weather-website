@@ -11,7 +11,8 @@ const getWeather = (lat, lon, callback) => {
                   {
                       temperature: response.body.current.temperature,
                       feelslike: response.body.current.feelslike,
-                      forecast: response.body.current.weather_descriptions[0]
+                      forecast: response.body.current.weather_descriptions[0],
+                      humidity: response.body.current.humidity
                   },
                   undefined
               );

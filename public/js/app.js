@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
     response.json().then((data) => {
         if(data.error) errorMessage.textContent = data.error
         else {
-            const response = `Location: ${data.location} Temperature ${data.temperature}, feelslike ${data.feelslike}, forecast ${data.forecast}`
+            const response = `Location: ${data.location} Temperature ${data.temperature}, feelslike ${data.feelslike}, humidity ${data.humidity}, forecast ${data.forecast}`
             dataMessage.textContent = response
         }
     })
